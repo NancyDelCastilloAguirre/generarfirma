@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://bundle.run/buffer@6.0.3"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Creación de firma</title>
+</head>
+<body>
+    <form class="form">
+        <h2>GENERA TU FIRMA</h2>
+        <p type="Nombre:" id="nombre"><input placeholder="Ingresa el nombre del documento aquí.."></input></p>
+        <p type="Mensaje:" id="mensaje"><input placeholder="Ingresa tu mensaje aquí.."></input></p>
+        <br><br><br><br>
+        <button id="enviar" onclick=generar()>Generar Firma digital</button>
+        <br><br><br>
+        <a href="https://zuka505.github.io/ValidacionFirmaDigital/" class="btn-fim">Verifica tu firma aquí</a>
+    </form>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
